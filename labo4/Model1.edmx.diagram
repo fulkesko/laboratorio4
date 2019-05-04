@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="825e2312721d4311837cc47d27329c45" Name="Diagram1">
+        <EntityTypeShape EntityType="LibreriaModel.Auto_Libro" Width="1.5" PointX="7.875" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Autor" Width="1.5" PointX="4.875" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Libro" Width="1.5" PointX="7.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Prestamo" Width="1.5" PointX="5.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Usuario" Width="1.5" PointX="2.875" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="LibreriaModel.FK__Auto_Libr__Id_Au__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__Auto_Libr__Id_Au__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__Prestamo__Fec_de__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__Prestamo__Id_usu__4222D4EF" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

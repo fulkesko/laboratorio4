@@ -1,0 +1,58 @@
+﻿@model IEnumerable<labo4.Libro>
+
+@{
+    ViewBag.Title = "BuscarLibro";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>BuscarLibro</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Editorial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumPags)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISBN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Editorial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumPags)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_libro }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id_libro }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_libro })
+        </td>
+    </tr>
+}
+
+</table>
